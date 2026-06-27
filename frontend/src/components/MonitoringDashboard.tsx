@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Thermometer, Droplets, Sun, Wind, CheckCircle2, BarChart3, Clock, Sprout, Leaf, Zap } from 'lucide-react';
+import { Thermometer, Droplets, Sun, Wind, CheckCircle2, BarChart3, Clock, Sprout, Zap } from 'lucide-react';
 
 const MonitoringDashboard = () => {
     const environmentMetrics = [
@@ -52,7 +52,7 @@ const MonitoringDashboard = () => {
                         <h4 className="text-xs font-bold text-white/40 uppercase mb-2 px-2 flex items-center gap-2">
                             <Wind size={14} /> Factores Ambientales
                         </h4>
-                        {environmentMetrics.map((metric, i) => (
+                        {environmentMetrics.map((metric) => (
                             <div key={metric.name} className="glass-card p-4 flex items-center justify-between border-[#10b9810a] hover:border-[#10b98133] transition-colors">
                                 <div className="flex items-center gap-3">
                                     <div className="w-8 h-8 rounded-lg bg-[#10b98111] flex items-center justify-center">
